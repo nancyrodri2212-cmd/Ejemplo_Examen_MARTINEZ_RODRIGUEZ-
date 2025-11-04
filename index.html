@@ -25,6 +25,208 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Personajes</title>
+  <style>
+    /* ======= ESTILOS GENERALES ======= */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #0047ab, #007bff);
+      color: #ffffff;
+      text-align: center;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      color: #ffea00;
+      text-shadow: 2px 2px #000;
+    }
+
+    p {
+      width: 80%;
+      margin: 10px auto;
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+
+    /* ======= MENÚ DE PERSONAJES ======= */
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .personaje {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      padding: 20px;
+      width: 220px;
+      transition: transform 0.3s, background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .personaje:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .personaje img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    .personaje h2 {
+      margin-top: 10px;
+      color: #ffeaa7;
+    }
+
+    .personaje p {
+      font-size: 0.9em;
+      color: #f0f0f0;
+    }
+
+    /* ======= LISTA ORDENADA ======= */
+    ol {
+      text-align: left;
+      margin: 30px auto;
+      width: 60%;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    ol li {
+      margin: 8px 0;
+    }
+
+    /* ======= TABLA ======= */
+    table {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    th, td {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ffea00;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenido a mi sitio de personajes</h1>
+    <p>Explora una selección de héroes y personajes icónicos del mundo del cómic y la cultura popular.</p>
+  </header>
+
+  <!-- MENÚ DE PERSONAJES -->
+  <div class="menu">
+    <div class="personaje">
+      <img src="araña.png" alt="Spider-Man">
+      <h2>Spider-Man</h2>
+      <p>Peter Parker, el héroe arácnido que protege Nueva York con su telaraña. Inteligente, valiente y con un gran sentido de responsabilidad.</p>
+    </div>
+
+    <div class="personaje">
+      <img src="araña2.png" alt="Venom">
+      <h2>Spiderman Negro (Venom)</h2>
+      <p>Un simbionte alienígena que otorga poder extraordinario, pero a un alto costo. Representa la oscuridad dentro de Spider-Man.</p>
+    </div>
+
+    <div class="personaje">
+      <img src="kiti.png" alt="Hello Kitty">
+      <h2>Hello Kitty</h2>
+      <p>Un ícono japonés de ternura y amistad. Hello Kitty simboliza la inocencia, la bondad y la alegría universal.</p>
+    </div>
+
+    <div class="personaje">
+      <img src="man.png" alt="Superman">
+      <h2>Superman</h2>
+      <p>El último hijo de Krypton, símbolo de esperanza y justicia. Posee fuerza sobrehumana, vuelo y visión láser.</p>
+    </div>
+  </div>
+
+  <!-- LISTA ORDENADA -->
+  <h2>Ranking de Popularidad</h2>
+  <ol>
+    <li>Spider-Man 🕷️</li>
+    <li>Superman 🦸‍♂️</li>
+    <li>Venom 🖤</li>
+    <li>Hello Kitty 🐱</li>
+  </ol>
+
+  <!-- TABLA DE INFORMACIÓN -->
+  <h2>Tabla de Información</h2>
+  <table>
+    <tr>
+      <th>Personaje</th>
+      <th>Universo</th>
+      <th>Poder Principal</th>
+      <th>Personalidad</th>
+    </tr>
+    <tr>
+      <td>Spider-Man</td>
+      <td>Marvel</td>
+      <td>Agilidad y telarañas</td>
+      <td>Responsable y valiente</td>
+    </tr>
+    <tr>
+      <td>Venom</td>
+      <td>Marvel</td>
+      <td>Fuerza simbiótica</td>
+      <td>Impulsivo y oscuro</td>
+    </tr>
+    <tr>
+      <td>Hello Kitty</td>
+      <td>Sanrio</td>
+      <td>Encanto y ternura</td>
+      <td>Amable y positiva</td>
+    </tr>
+    <tr>
+      <td>Superman</td>
+      <td>DC Comics</td>
+      <td>Superfuerza y vuelo</td>
+      <td>Heroico y justo</td>
+    </tr>
+  </table>
+
+  <footer>
+    <p>© 2025 Mi sitio de personajes | Diseñado por [Tu Nombre]</p>
+  </footer>
+
+</body>
+</html>
 
 
 
