@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Personajes</title>
+  <style>
+    /* ======= ESTILOS GENERALES ======= */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #007bff, #0047ab);
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    /* ======= CONTENEDOR DEL MENÚ ======= */
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    /* ======= TARJETAS DE PERSONAJES ======= */
+    .personaje {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      padding: 20px;
+      width: 180px;
+      transition: transform 0.3s, background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .personaje:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .personaje img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .personaje h2 {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Selecciona tu Personaje</h1>
+
+  <div class="menu">
+    <div class="personaje">
+      <img src="araña.png" alt="Personaje 1">
+      <h2>Personaje 1</h2>
+    </div>
+
+    <div class="personaje">
+      <img src="araña2.png" alt="Personaje 2">
+      <h2>Personaje 2</h2>
+    </div>
+
+    <div class="personaje">
+      <img src="kiti.png" alt="Personaje 3">
+      <h2>Personaje 3</h2>
+    </div>
+
+    <div class="personaje">
+      <img src="man.png" alt="Personaje 4">
+      <h2>Personaje 4</h2>
+    </div>
+  </div>
+
+</body>
+</html>
